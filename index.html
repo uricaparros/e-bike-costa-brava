@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>E-Bike Costa Brava - Alquiler de Bicicletas Eléctricas</title>
+  <!-- Tailwind CSS desde CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Fuentes personalizadas -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Estilo personalizado -->
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-800">
+  <!-- Navegación -->
+  <header class="bg-white shadow fixed w-full z-30">
+    <div class="container mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="text-2xl font-bold text-green-600">E-Bike Costa Brava</div>
+      <nav>
+        <ul class="flex space-x-8">
+          <li><a href="#inicio" class="hover:text-green-600 transition">Inicio</a></li>
+          <li><a href="#servicios" class="hover:text-green-600 transition">Servicios</a></li>
+          <li><a href="#galeria" class="hover:text-green-600 transition">Galería</a></li>
+          <li><a href="#contacto" class="hover:text-green-600 transition">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Sección Hero -->
+  <section id="inicio" class="pt-24">
+    <div class="relative h-screen">
+      <!-- Imagen de fondo del Hero (link 1) -->
+      <img src="https://plus.unsplash.com/premium_photo-1663088832186-9968fc8e7d10?q=80&w=1535&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Bicicleta eléctrica en la Costa Brava" class="absolute inset-0 object-cover w-full h-full">
+      <!-- Capa para suavizar la imagen -->
+      <div class="absolute inset-0 bg-black opacity-40"></div>
+      <!-- Contenido central del Hero -->
+      <div class="relative flex flex-col items-center justify-center h-full text-center text-white px-4">
+        <h1 class="text-4xl md:text-6xl font-bold mb-4">Explora la Costa Brava a tu Ritmo</h1>
+        <p class="text-lg md:text-2xl mb-6 max-w-3xl">
+          Con nuestras bicicletas eléctricas podrás descubrir paisajes genuinos y disfrutar de la naturaleza sin prisas.
+        </p>
+        <a href="#contacto" class="bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-8 rounded-full transition">
+          Reserva tu Salida
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de Servicios -->
+  <section id="servicios" class="py-16 bg-gray-100">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold text-green-600 mb-4">Nuestros Servicios</h2>
+      <p class="text-base text-gray-700 mb-12 max-w-2xl mx-auto">
+         Ofrecemos opciones de alquiler flexibles y rutas cuidadosamente seleccionadas para que vivas la Costa Brava de forma natural.
+      </p>
+      <div class="grid sm:grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Tarjeta 1: Alquiler Flexible (link 2) -->
+        <div class="bg-white p-6 rounded-lg shadow">
+          <img src="https://plus.unsplash.com/premium_photo-1715779332226-13fdfe35b907?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8ZSUyMGJpa2V8ZW58MHx8MHx8fDA%3D" alt="Alquiler flexible" class="w-full h-40 object-cover rounded-md mb-4">
+          <h3 class="text-xl font-semibold mb-2">Alquiler Flexible</h3>
+          <p class="text-gray-600 text-sm">Elige el tiempo que necesites, ya sea para un paseo corto o un día completo.</p>
+        </div>
+        <!-- Tarjeta 2: Rutas Guiadas (link 3) -->
+        <div class="bg-white p-6 rounded-lg shadow">
+          <img src="https://images.unsplash.com/photo-1621394445346-c7b502f07206?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzh8fGUlMjBiaWtlfGVufDB8fDB8fHww" alt="Rutas guiadas" class="w-full h-40 object-cover rounded-md mb-4">
+          <h3 class="text-xl font-semibold mb-2">Rutas Guiadas</h3>
+          <p class="text-gray-600 text-sm">Recorre senderos seleccionados en compañía de guías que conocen cada rincón.</p>
+        </div>
+        <!-- Tarjeta 3: Experiencias Auténticas (link 4) -->
+        <div class="bg-white p-6 rounded-lg shadow">
+          <img src="https://images.unsplash.com/photo-1618520593672-e227a9030f5d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZSUyMGJpa2UlMjBiZWFjaHxlbnwwfHwwfHx8MA%3D%3D" alt="Experiencias auténticas" class="w-full h-40 object-cover rounded-md mb-4">
+          <h3 class="text-xl font-semibold mb-2">Experiencias Auténticas</h3>
+          <p class="text-gray-600 text-sm">Disfruta de momentos reales y memorables en un entorno natural único.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de Galería -->
+  <section id="galeria" class="py-16">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold text-green-600 mb-4">Galería de Experiencias</h2>
+      <p class="text-base text-gray-700 mb-12 max-w-2xl mx-auto">
+         Imágenes reales de quienes han recorrido la Costa Brava en nuestras e-bikes. Sin exageraciones, solo momentos auténticos.
+      </p>
+      <div class="grid sm:grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Imagen 1 con descripción (link 5) -->
+        <figure class="group">
+          <img src="https://images.unsplash.com/photo-1585160029224-3294e0aaa857?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8ZSUyMGJpa2UlMjBiZWFjaHxlbnwwfHwwfHx8MA%3D%3D" alt="Paseo por la playa" class="w-full h-56 object-cover rounded-md transition-transform duration-300 group-hover:scale-105">
+          <figcaption class="mt-2 text-sm text-gray-600">Un paseo relajado al atardecer</figcaption>
+        </figure>
+        <!-- Imagen 2 con descripción (link 6) -->
+        <figure class="group">
+          <img src="https://images.unsplash.com/photo-1585160140761-b0733deab17d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGUlMjBiaWtlJTIwYmVhY2h8ZW58MHx8MHx8fDA%3D" alt="Ruta junto al mar" class="w-full h-56 object-cover rounded-md transition-transform duration-300 group-hover:scale-105">
+          <figcaption class="mt-2 text-sm text-gray-600">Ruta junto al mar, con vistas naturales</figcaption>
+        </figure>
+        <!-- Imagen 3 con descripción (link 7) -->
+        <figure class="group">
+          <img src="https://images.unsplash.com/photo-1642517699053-0402ef70d7df?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y29zdGElMjBicmF2YXxlbnwwfHwwfHx8MA%3D%3D" alt="Instante en la Costa Brava" class="w-full h-56 object-cover rounded-md transition-transform duration-300 group-hover:scale-105">
+          <figcaption class="mt-2 text-sm text-gray-600">Instantes genuinos junto a la costa</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de Contacto -->
+  <section id="contacto" class="py-16 bg-gray-100">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-green-600 text-center mb-6">Contacto</h2>
+      <p class="text-base text-gray-700 text-center mb-12 max-w-xl mx-auto">
+         ¿Tienes alguna pregunta o quieres saber más? Escríbenos y te responderemos pronto.
+      </p>
+      <div class="max-w-xl mx-auto">
+        <form action="https://usebasin.com/f/08837a698c9f" method="POST" class="bg-white p-8 rounded-lg shadow">
+          <div class="mb-4">
+            <label for="name" class="block text-gray-700 mb-2">Nombre</label>
+            <input type="text" id="name" name="name" required class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-green-600">
+          </div>
+          <div class="mb-4">
+            <label for="email" class="block text-gray-700 mb-2">Correo Electrónico</label>
+            <input type="email" id="email" name="email" required class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-green-600">
+          </div>
+          <div class="mb-4">
+            <label for="message" class="block text-gray-700 mb-2">Mensaje</label>
+            <textarea id="message" name="message" rows="4" required class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-green-600"></textarea>
+          </div>
+          <button type="submit" class="w-full bg-green-600 hover:bg-green-700 text-white py-3 rounded-full font-semibold transition">Enviar Mensaje</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white py-6 shadow mt-16">
+    <div class="container mx-auto px-6 text-center">
+      <p class="text-gray-600">&copy; 2025 E-Bike Costa Brava. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+  
+</body>
+</html>
